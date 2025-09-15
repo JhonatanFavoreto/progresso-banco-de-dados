@@ -12,5 +12,11 @@ CREATE TABLE artistas (
 
 INSERT INTO artistas (nome, tipo, membros, genero_musical, pais_origem, ano_inicio, musica_mais_ouvida, ativo)
 VALUES
-('Coldplay', 'Banda', '4', 'Rock', 'Reino Unido', 1996, 'Yellow', TRUE),
-('Red Hot Chili Peppers', 'Banda', '4', 'Funk Rock', 'Estados Unidos', 1983, 'Californication', TRUE);
+('Adele', 'Solista', '1', 'Pop', 'Reino Unido', 2006, 'Hello', TRUE),
+('Beyoncé', 'Solista', '1', 'R&B', 'Estados Unidos', 1997, 'Single Ladies', TRUE),
+('Imagine Dragons', 'Banda', '4', 'Rock Alternativo', 'Estados Unidos', 2008, 'Radioactive', TRUE),
+('Dua Lipa', 'Solista', '1', 'Pop', 'Reino Unido', 2015, 'Levitating', TRUE),
+('Foo Fighters', 'Banda', '5', 'Rock', 'Estados Unidos', 1994, 'Everlong', TRUE),
+('Bruno Mars', 'Solista', '1', 'Pop/R&B', 'Estados Unidos', 2004, 'Uptown Funk', TRUE),
+('Maroon 5', 'Banda', '5', 'Pop Rock', 'Estados Unidos', 2001, 'Sugar', TRUE),
+('Taylor Swift', 'Solista', '1', 'Pop/Country', 'Estados Unidos', 2006, 'Shake It Off', TRUE);
