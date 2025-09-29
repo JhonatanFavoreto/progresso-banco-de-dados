@@ -1,4 +1,4 @@
-CREATE DATABASE beautytechdb01;
+CREATE DATABASE beautytechdb_ds2;
 
 CREATE TABLE produtos (
     id SERIAL PRIMARY KEY,
@@ -8,7 +8,6 @@ CREATE TABLE produtos (
     categoria VARCHAR(30) NOT NULL,
     estoque INT DEFAULT 0
 );
-
 
 INSERT INTO produtos (nome, marca, preco, categoria, estoque)
 VALUES
@@ -32,3 +31,20 @@ VALUES
 ('Escova Desembaraçadora Tangle Teezer', 'Tangle Teezer', 85.00, 'cabelos', 130),
 ('Fixador de Maquiagem All Nighter', 'Urban Decay', 180.00, 'maquiagem', 95),
 ('Perfume J''adore', 'Dior', 650.00, 'perfumes', 50);
+
+SELECT * FROM produtos;
+UPDATE produtos SET preco = preco - preco * 0.20
+WHERE categoria = 'skincare';
+
+\! cls;
+UPDATE produtos SET estoque = estoque + 50;
+
+SELECT * FROM produtos;
+UPDATE produtos SET preco = preco + preco * 0.15
+WHERE marca = 'Tangle Teezer';
+
+\! cls;
+SELECT * FROM produtos;
+\! cls;
+UPDATE produtos SET preco = preco - preco * 0.10
+WHERE estoque > 200;
